@@ -1,0 +1,26 @@
+{
+    "name": "palkiewicz/module-producttag",
+    "description": "Product Tag",
+    "type": "magento2-module",
+    "license": "MIT",
+    "require": {
+        "php": "~7.2.0||~7.3.0||~7.4.0",
+        "magento/module-payment": "100.3.*||100.4.*",
+        "magento/module-checkout": "100.3.*||100.4.*",
+        "magento/module-sales": "102.*||103.*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Palkiewicz\\ProductTag\\": ""
+        }
+    }
+}

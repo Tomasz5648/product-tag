@@ -1,1 +1,1 @@
-# product-tag
+# Magento 2 Product Tags
