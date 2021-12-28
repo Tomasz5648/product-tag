@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--
+	Tomasz Palkiewicz 2021
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route frontName="palkiewicz_producttag" id="palkiewicz_producttag">
+            <module name="Palkiewicz_ProductTag"/>
+        </route>
+    </router>
+</config>

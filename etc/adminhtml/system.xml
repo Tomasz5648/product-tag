@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+	Tomasz Palkiewicz 2021
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="palkiewicz" translate="label" sortOrder="10">
+            <label>Palkiewicz</label>
+        </tab>
+        <section id="product_tag" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Product Tag</label>
+            <tab>palkiewicz</tab>
+            <resource>Palkiewicz_ProductTag::producttag_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Import CSV file</label>
+                <field id="custom_file_upload" translate="label" type="Magento\Config\Block\System\Config\Form\Field\File" sortOrder="10" showInDefault="1" showInWebsite="1" >
+                    <label>Upload Csv File</label>
+                    <comment>Add CSV file and click on Save Config after that use Import button</comment>
+                    <backend_model>Palkiewicz\ProductTag\Model\Config\Backend\File</backend_model>
+                    <upload_dir>pub</upload_dir>
+                </field>
+                <field id="custom_button" translate="label" type="button" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Import Product Attribute</label>
+                    <frontend_model>Palkiewicz\ProductTag\Block\System\Config\Button</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
