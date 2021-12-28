@@ -16,12 +16,12 @@
                 <label>Import CSV file</label>
                 <field id="custom_file_upload" translate="label" type="Magento\Config\Block\System\Config\Form\Field\File" sortOrder="10" showInDefault="1" showInWebsite="1" >
                     <label>Upload Csv File</label>
-                    <comment>Add CSV file and click on Save Config after that use Import button</comment>
                     <backend_model>Palkiewicz\ProductTag\Model\Config\Backend\File</backend_model>
                     <upload_dir>pub</upload_dir>
                 </field>
                 <field id="custom_button" translate="label" type="button" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Import Product Attribute</label>
+                    <comment>Add CSV file and click on Save Config after that use Import button</comment>
                     <frontend_model>Palkiewicz\ProductTag\Block\System\Config\Button</frontend_model>
                 </field>
             </group>
